@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000d1a</color>
+    <color name="colorLightBackground">#e6000d1a</color>
+    <color name="colorPrimaryDark">#000d1a</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorDarkRed">#bf0000</color>
+    <color name="colorTrans">#95000000</color>
+    <color name="colorRipple">#43b9b9b9</color>
+    <color name="colorRedRipple">#afbf0000</color>
+    <color name="colorBlueLight">#7b011050</color>
+    <color name="colorWhiteLight">#4fffffff</color>
+    <color name="colorBlackLight">#af000000</color>
+
+
+</resources>

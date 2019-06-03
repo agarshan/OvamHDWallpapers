@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_margin="15dp"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_height="48dp">
+        <com.TolKap.agarshan.tamilwallpaper.custom.CustomFontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Set wallpaper"
+            android:gravity="center"
+            android:textSize="16dp"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginLeft="30dp"
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_height="24dp">
+        <com.TolKap.agarshan.tamilwallpaper.custom.CustomFontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Resolution size"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+        <RadioButton
+            android:layout_marginRight="100dp"
+            android:checked="true"
+            android:id="@+id/lowImageRb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="720*1280"/>
+
+        <RadioButton
+            android:id="@+id/highImageRb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1080*1920"/>
+
+
+
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/homeScreenRl"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+            <ImageView
+                android:id="@+id/homeDialogIv"
+                android:layout_marginLeft="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_home_blue_24dp"
+                />
+
+
+        <com.TolKap.agarshan.tamilwallpaper.custom.CustomFontTextView
+            android:layout_alignLeft="@+id/homeDialogIv"
+           android:layout_marginLeft="50dp"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:text="Home screen"
+            />
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/lockScreenRL"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+            <ImageView
+                android:id="@+id/lockDialogIv"
+                android:layout_marginLeft="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_lock_blue_24dp"
+
+                />
+
+
+        <com.TolKap.agarshan.tamilwallpaper.custom.CustomFontTextView
+            android:layout_alignLeft="@+id/lockDialogIv"
+           android:layout_marginLeft="50dp"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:text="Lock screen"
+            />
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/bothScreenRl"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+            <ImageView
+                android:id="@+id/bothDialogIv"
+                android:layout_marginLeft="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_phone_android_blue_24dp"
+                />
+
+
+        <com.TolKap.agarshan.tamilwallpaper.custom.CustomFontTextView
+            android:layout_alignLeft="@+id/bothDialogIv"
+           android:layout_marginLeft="50dp"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:text="Both"
+            />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

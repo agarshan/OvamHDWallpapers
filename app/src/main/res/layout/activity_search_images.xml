@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    tools:context=".activity.SearchimagesActivity">
+
+
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+
+            <ImageView
+                android:id="@+id/backBtn"
+                android:background="@drawable/backbtn"
+                android:layout_width="25dp"
+                app:backgroundTint="@android:color/white"
+                android:layout_height="25dp" />
+
+        </android.support.v7.widget.Toolbar>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.design.widget.FloatingActionButton
+            app:fabSize="normal"
+            android:id="@+id/upFAB"
+            android:visibility="invisible"
+            android:layout_centerHorizontal="true"
+            android:layout_width="match_parent"
+            app:backgroundTint="@color/colorPrimary"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_arrow_upward_white_24dp"
+            />
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/allImagesRv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        </android.support.v7.widget.RecyclerView>
+
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-7266672635430903/8983880563">
+        </com.google.android.gms.ads.AdView>
+
+
+        <TextView
+            android:id="@+id/noInternetTv"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="No Internet Connection"
+            android:drawableTop="@drawable/ic_warning_white_24dp"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:visibility="invisible"
+            />
+
+        <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/avi"
+            android:layout_gravity="center"
+            android:layout_centerInParent="true"
+            app:indicatorColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:indicatorName="BallPulseIndicator"
+            />
+
+        <TextView
+            android:id="@+id/noItemsTv"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="No Results Found"
+            android:layout_centerInParent="true"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:textSize="18dp"
+            android:visibility="invisible"
+            />
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>
